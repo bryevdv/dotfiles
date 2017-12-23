@@ -1,0 +1,8 @@
+[alias]
+        co = checkout
+        br = branch
+[user]
+	email = bryanv@anaconda.com
+	name = Bryan Van de Ven
+[core]
+	editor = vim
