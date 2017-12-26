@@ -11,7 +11,7 @@
 /Pictures
 /Public
 
-# Top Level 
+# Top Level
 /.CFUserTextEncoding
 /.Trash
 /.bash_history
@@ -24,6 +24,7 @@
 /.dropbox
 /.ipython
 /.npm/
+/.pylint.d
 /.python_history
 /.ssh
 /.v8flags*
