@@ -1,0 +1,4 @@
+channels:
+  - defaults
+  - bokeh
+  - conda-forge
