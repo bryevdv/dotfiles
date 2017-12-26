@@ -1,5 +1,17 @@
+# Mac OS
 .DS_Store
+/.Trash
+/Applications
+/Desktop
+/Documents
+/Downloads
+/Library
+/Movies
+/Music
+/Pictures
+/Public
 
+# Top Level 
 /.CFUserTextEncoding
 /.Trash
 /.bash_history
@@ -7,24 +19,26 @@
 /.bokeh
 /.cisco
 /.conda
+/.config
 /.docker
+/.dropbox
+/.ipython
+/.npm/
 /.python_history
 /.ssh
+/.v8flags*
+/.vim
 /.viminfo
+/.vscode/extensions
 /.zcompdump*
 /.zhistory*
 /.zsh_history*
-/Applications
-/Desktop
-/Documents
-/Downloads
+
+# Personal
 /Google Drive
-/Library
-/Movies
-/Music
-/Pictures
-/Public
+/Dropbox
 /anaconda
+/tmp
 /work
 
 *.swp
