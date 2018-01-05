@@ -23,6 +23,7 @@
 /.docker
 /.dropbox
 /.ipython
+/.matplotlib
 /.npm/
 /.pylint.d
 /.python_history
