@@ -14,15 +14,18 @@
 # Top Level
 /.CFUserTextEncoding
 /.Trash
+/.anyconnect
 /.bash_history
 /.bash_sessions
 /.bokeh
 /.cisco
 /.conda
+/.cups
 /.config
 /.docker
 /.dropbox
 /.ipython
+/.jupyter
 /.matplotlib
 /.npm/
 /.pylint.d
