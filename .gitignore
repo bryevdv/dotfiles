@@ -26,6 +26,7 @@
 /.dropbox
 /.ipython
 /.jupyter
+/.keras
 /.matplotlib
 /.npm/
 /.pylint.d
