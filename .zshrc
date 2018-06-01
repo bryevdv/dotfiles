@@ -130,3 +130,6 @@ export CVSEDITOR=vim
 export XEDITOR=vim
 export GIT_EDITOR=vim
 export OSXEDITOR=sb
+
+# added by travis gem
+[ -f /Users/bryanv/.travis/travis.sh ] && source /Users/bryanv/.travis/travis.sh

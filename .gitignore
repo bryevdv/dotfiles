@@ -29,6 +29,7 @@
 /.keras
 /.matplotlib
 /.npm/
+/.npmrc
 /.pylint.d
 /.python_history
 /.ssh
