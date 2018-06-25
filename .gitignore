@@ -37,6 +37,7 @@
 /.vim
 /.viminfo
 /.vscode/extensions
+/.VSCodeVim/
 /.zcompdump*
 /.zhistory*
 /.zsh_history*
