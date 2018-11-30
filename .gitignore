@@ -33,6 +33,7 @@
 /.npmrc
 /.pylint.d
 /.python_history
+/.serverless
 /.ssh
 /.v8flags*
 /.vim
