@@ -19,12 +19,14 @@
 /.bash_history
 /.bash_sessions
 /.bokeh
+/.bundle
 /.cisco
 /.conda
 /.cups
 /.config
 /.docker
 /.dropbox
+/.gem
 /.ipython
 /.jupyter
 /.keras
