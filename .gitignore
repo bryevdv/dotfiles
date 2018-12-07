@@ -27,6 +27,7 @@
 /.docker
 /.dropbox
 /.gem
+/.intake
 /.ipython
 /.jupyter
 /.keras
