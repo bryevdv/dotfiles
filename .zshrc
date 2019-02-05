@@ -77,8 +77,8 @@ test -d "$HOME/bin" && PATH="$_:$PATH"
 test -d "$HOME/.gitlocal/bin" && PATH="$_:$PATH"
 test -d "/usr/local/opt/coreutils/libexec/gnubin" && PATH="$_:$PATH"
 
-. ${HOME}/anaconda/etc/profile.d/conda.sh
-conda activate
+# . ${HOME}/anaconda/etc/profile.d/conda.sh  # commented out by conda initialize
+# conda activate  # commented out by conda initialize
 
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"
 
@@ -142,3 +142,18 @@ export OSXEDITOR=sb
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /Users/bryanv/anaconda/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/bryanv/anaconda/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/bryanv/anaconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/bryanv/anaconda/etc/profile.d/conda.sh" ]; then
+        . "/Users/bryanv/anaconda/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/bryanv/anaconda/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

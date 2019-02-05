@@ -20,12 +20,14 @@
 /.bash_sessions
 /.bokeh
 /.bundle
+/.cargo
 /.cisco
 /.conda
 /.cups
 /.config
 /.docker
 /.dropbox
+/.emscripten*
 /.gem
 /.intake
 /.ipython
