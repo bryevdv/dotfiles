@@ -15,7 +15,10 @@
 /.CFUserTextEncoding
 /.Trash
 /.anyconnect
+/.autorest
 /.aws
+/.azure
+/.base16_theme
 /.bash_history
 /.bash_sessions
 /.bokeh
@@ -53,6 +56,7 @@
 /Google Drive
 /Dropbox
 /anaconda
+/anaconda3
 /forks
 /tmp
 /work
