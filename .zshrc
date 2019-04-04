@@ -138,20 +138,20 @@ export OSXEDITOR=sb
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/bryanv/anaconda/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/bryanv/anaconda/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+[[ -f /Users/bryanv/anaconda3/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/bryanv/anaconda3/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/bryanv/anaconda/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/bryanv/anaconda/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+[[ -f /Users/bryanv/anaconda3/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/bryanv/anaconda3/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/bryanv/anaconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/bryan/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/bryanv/anaconda/etc/profile.d/conda.sh" ]; then
-        . "/Users/bryanv/anaconda/etc/profile.d/conda.sh"
+    if [ -f "/Users/bryan/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/bryan/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/bryanv/anaconda/bin:$PATH"
+        export PATH="/Users/bryan/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup

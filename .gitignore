@@ -57,8 +57,24 @@
 /Dropbox
 /anaconda
 /anaconda3
+/bin/grin
 /forks
 /tmp
 /work
+
+# Work
+/.IdentityService/
+/.android
+/.dotnet
+/.local
+/.mono
+/.ms_openjdk_config
+/.net
+/.node_repl_history
+/.nuget
+/.psql_history
+/Applications (Parallels)/
+/Parallels
+/dbtmp
 
 *.swp
