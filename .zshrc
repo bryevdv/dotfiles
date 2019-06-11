@@ -123,6 +123,8 @@ alias zz='fasd_cd -d -i' # cd with interactive selection
 alias dbchrome='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --headless --remote-debugging-port=9222 --disable-gpu https://chromium.org'
 alias ptex='py.test -s -v -m examples --tb line --diff-ref FETCH_HEAD --self-contained-html --report-path=examples.html'
 
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+
 # vars -------------------------------------------------------
 
 export GOOGLE_API_KEY="AIzaSyAM1OHVm6Yr_i54Kt01mylfxyNxQdxmxHQ"
@@ -134,24 +136,25 @@ export GIT_EDITOR=vim
 export OSXEDITOR=sb
 
 # added by travis gem
-[ -f /Users/bryanv/.travis/travis.sh ] && source /Users/bryanv/.travis/travis.sh
+[ -f /Users/bryan/.travis/travis.sh ] && source /Users/bryan/.travis/travis.sh
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/bryanv/anaconda/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/bryanv/anaconda/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+[[ -f /Users/bryan/anaconda/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/bryan/anaconda/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/bryanv/anaconda/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/bryanv/anaconda/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+[[ -f /Users/bryan/anaconda/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/bryan/anaconda/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/bryanv/anaconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/bryan/anaconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/bryanv/anaconda/etc/profile.d/conda.sh" ]; then
-        . "/Users/bryanv/anaconda/etc/profile.d/conda.sh"
+    if [ -f "/Users/bryan/anaconda/etc/profile.d/conda.sh" ]; then
+        . "/Users/bryan/anaconda/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/bryanv/anaconda/bin:$PATH"
+        export PATH="/Users/bryan/anaconda/bin:$PATH"
     fi
 fi
 unset __conda_setup

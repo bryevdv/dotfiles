@@ -1,4 +1,5 @@
 channels:
   - defaults
   - bokeh
+  - conda-forge
 changeps1: false

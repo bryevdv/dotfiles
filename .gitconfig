@@ -2,7 +2,7 @@
         co = checkout
         br = branch
 [user]
-	email = bryanv@anaconda.com
+	email = bryan@bokeh.org
 	name = Bryan Van de Ven
 [core]
 	editor = vim

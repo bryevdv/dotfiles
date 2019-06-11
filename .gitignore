@@ -58,7 +58,10 @@
 /anaconda
 /anaconda3
 /forks
+/GDrive
+/local
 /tmp
+/Virtual Machines*
 /work
 
 *.swp
