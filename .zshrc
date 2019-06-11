@@ -127,8 +127,6 @@ alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
 # vars -------------------------------------------------------
 
-export GOOGLE_API_KEY="AIzaSyAM1OHVm6Yr_i54Kt01mylfxyNxQdxmxHQ"
-
 export EDITOR=vim
 export CVSEDITOR=vim
 export XEDITOR=vim
