@@ -96,8 +96,8 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
 zstyle ':prezto:module:prompt' theme 'pure'
-#style ':prezto:module:python' conda-init 'on'
-zstyle -T ':prezto:module:python' conda-init
+zstyle ':prezto:module:python' skip-virtualenvwrapper-init 'on'
+zstyle ':prezto:module:python' conda-init 'on'
 
 #
 # Ruby
