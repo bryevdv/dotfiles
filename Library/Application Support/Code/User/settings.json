@@ -1,0 +1,26 @@
+{
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": false,
+    "workbench.colorTheme": "Solarized Light",
+    "python.jediEnabled": false,
+    "editor.minimap.enabled": false,
+    "files.trimTrailingWhitespace": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "codemetrics.basics.MetricsForClassDeclarationsToggled": false,
+    "codemetrics.nodeconfiguration.ReturnStatement": 0,
+    "window.zoomLevel": 0,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.autoIndent": false,
+    "editor.renderControlCharacters": false,
+    "julia.enableTelemetry": false,
+    "files.exclude": {
+        "**/*.pyc": true
+    },
+    "terminal.integrated.inheritEnv": false,
+    "update.mode": "manual"
+}
