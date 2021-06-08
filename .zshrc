@@ -93,7 +93,7 @@ alias sf='fasd -sif'     # interactive file selection
 alias z='fasd_cd -d'     # cd, same functionality as j in autojump
 alias zz='fasd_cd -d -i' # cd with interactive selection
 
-alias dbchrome='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary --headless --remote-debugging-port=9222 --disable-gpu https://chromium.org'
+alias dbchrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --headless --remote-debugging-port=9222 --disable-gpu https://chromium.org'
 alias ptex='py.test -s -v -m examples --tb line --diff-ref FETCH_HEAD --self-contained-html --report-path=examples.html'
 
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
