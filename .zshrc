@@ -5,14 +5,26 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+fpath+="/Users/bvandeven/.zprezto/modules/conda-zsh-completion/"
+
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+    source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
+
+plugins=(… conda-zsh-completion)
+autoload -U compinit && compinit
+
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "^[[A" up-line-or-beginning-search   # Up
+bindkey "^[[B" down-line-or-beginning-search # Down
 
 # Customize to your needs...
 
-if [[ $- != *i* ]] ; then
+if [[ $- != *i* ]]; then
     # Shell is non-interactive.  Be done now!
     return
 fi
@@ -38,49 +50,9 @@ export SAVEHIST="$TERMINAL_HISTORY_SIZE"
 
 # export PATH=""
 
-# # Allow OS X tool to discover typical PATH items first
-# eval "$(/usr/libexec/path_helper -s)"
-
-# # Then add specific paths that I use.
-# test -d /usr/local/opt/ruby/bin && PATH="$PATH:$_"
-# test -d /opt/local/bin && PATH="$PATH:$_"
-# test -d /opt/local/sbin && PATH="$PATH:$_"
-
-# # Export currently built PATH so the rest of this script has access to them.
-# if test -e /usr/libexec/path_helper; then
-#     eval "$($_ -s)"
-# else
-#     export PATH
-#     export MANPATH
-# fi
-
-# # Make sure Homebrew utilities override system utilities.
-# if type brew >/dev/null 2>&1; then
-#     BREW_PREFIX="$(brew --prefix)"
-#     test -d "$BREW_PREFIX/bin" && PATH="$_:$PATH"
-#     test -d "$BREW_PREFIX/sbin" && PATH="$_:$PATH"
-#     BREW_COREUTILS_PREFIX="$(brew --prefix coreutils 2>/dev/null)"
-#     if [[ $? == 0 ]]; then
-#         test -d "$BREW_COREUTILS_PREFIX/libexec/gnubin" && PATH="$_:$PATH"
-#         test -d "$BREW_COREUTILS_PREFIX/libexec/gnuman" && MANPATH="$_:$MANPATH"
-#     fi
-#     export PATH
-#     export MANPATH
-# fi
-
-# # Add specific application paths, such as Python, rvm, etc...
-# test -d /opt/local/lib/pkgconfig && PKG_CONFIG_PATH="$_:$PKG_CONFIG_PATH"
-# test -d /usr/local/lib/pkgconfig && PKG_CONFIG_PATH="$_:$PKG_CONFIG_PATH"
-
-# # Make sure user utilities take precedence
+# Make sure user utilities take precedence
 test -d "$HOME/bin" && PATH="$_:$PATH"
-test -d "$HOME/.gitlocal/bin" && PATH="$_:$PATH"
 test -d "/usr/local/opt/coreutils/libexec/gnubin" && PATH="$_:$PATH"
-
-# . ${HOME}/anaconda/etc/profile.d/conda.sh  # commented out by conda initialize
-# conda activate  # commented out by conda initialize
-
-export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"
 
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
@@ -106,7 +78,7 @@ alias envg='env|grep'
 alias sb='subl'
 alias sbn='sb -n'
 alias gitgl='git log --decorate --oneline --graph'
-alias grip='grin -I "*.py"'
+alias grip='rg -T py Column'
 
 alias go='git co'
 alias pt='py.test -m "not (examples or integration or js or quality)"'
@@ -132,20 +104,11 @@ export CVSEDITOR=vim
 export XEDITOR=vim
 export GIT_EDITOR=vim
 export OSXEDITOR=sb
-
-# added by travis gem
-[ -f /Users/bryan/.travis/travis.sh ] && source /Users/bryan/.travis/travis.sh
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/bryan/anaconda/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/bryan/anaconda/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/bryan/anaconda/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/bryan/anaconda/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=111'
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/bryan/anaconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/bryan/anaconda/bin/conda' 'shell.zsh' 'hook' 2>/dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
@@ -157,4 +120,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
