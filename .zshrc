@@ -78,7 +78,7 @@ alias envg='env|grep'
 alias sb='subl'
 alias sbn='sb -n'
 alias gitgl='git log --decorate --oneline --graph'
-alias grip='rg -T py Column'
+alias grip='rg -T py'
 
 alias go='git co'
 alias pt='py.test -m "not (examples or integration or js or quality)"'
