@@ -1,0 +1,9 @@
+[alias]
+        co = checkout
+        br = branch
+        st = status
+[user]
+	email = bryan@bokeh.org
+	name = Bryan Van de Ven
+[core]
+	editor = vim

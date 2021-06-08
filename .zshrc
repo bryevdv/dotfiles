@@ -75,8 +75,6 @@ alias h='history 0'
 alias hg='h|grep'
 alias psg='echo "  UID   PID  PPID CPU PRI NI      VSZ    RSS WCHAN  STAT  TT       TIME COMMAND";ps axwl|grep -v "grep"|grep'
 alias envg='env|grep'
-alias sb='subl'
-alias sbn='sb -n'
 alias gitgl='git log --decorate --oneline --graph'
 alias grip='rg -t py'
 alias grit='rg -t ts'
@@ -93,18 +91,18 @@ alias sf='fasd -sif'     # interactive file selection
 alias z='fasd_cd -d'     # cd, same functionality as j in autojump
 alias zz='fasd_cd -d -i' # cd with interactive selection
 
-alias dbchrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --headless --remote-debugging-port=9222 --disable-gpu https://chromium.org'
-alias ptex='py.test -s -v -m examples --tb line --diff-ref FETCH_HEAD --self-contained-html --report-path=examples.html'
-
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+alias dbchrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --headless --remote-debugging-port=9222 --disable-gpu https://chromium.org'
+
+alias ptex='py.test -s -v -m examples --tb line --diff-ref FETCH_HEAD --self-contained-html --report-path=examples.html'
 
 # vars -------------------------------------------------------
 
 export EDITOR=vim
-export CVSEDITOR=vim
 export XEDITOR=vim
 export GIT_EDITOR=vim
-export OSXEDITOR=sb
+export OSXEDITOR=vim
+
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=111'
 
 # >>> conda initialize >>>
