@@ -1,6 +1,10 @@
 
 ### Update OSX settings
 
+### Install xcode command line tools
+
+    xcode-select --install
+
 ### Install 1password
 
 	https://1password.com/downloads/mac/
@@ -12,11 +16,16 @@
 ### Install Packages
 
     Chrome
+    Discord
     Docker
     Firefox
+    Logitech Camera Settings
     ScreenFlow
     Signal
+    Slack
     Source Code Pro
+    Spotify
+    Zoom
 
 ### Install homebrew
 
@@ -24,7 +33,7 @@
 
 ### Install brew packages
 
-    brew install visual-studio-code ripgrep
+    brew install visual-studio-code ripgrep graphviz coreutils
 
 ### Install zprezto
 
